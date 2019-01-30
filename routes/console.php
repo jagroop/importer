@@ -18,6 +18,6 @@ use App\Imports\ZipImport;
 
 
 Artisan::command('check', function () {
-    $cities = City::query()->limit(10)->get();
+    $cities = City::Zipcodes()->limit(2)->get();
     dd($cities);
 })->describe('Display an inspiring quote');
